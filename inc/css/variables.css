@@ -1,0 +1,35 @@
+
+/* Colors */
+:root {
+    --bright-red:       #d45b40;
+    --indigo:           #4fafbf;
+    --pastel-pink:      #edb6c5;
+    --pastel-green:     #b6d39b;
+    --pastel-blue:      #b3c4dd;
+    --pastel-orange:    #eeb093;
+    --dark-grey:        #414042;
+    --light-grey:       #d8dadd;
+    --white:            #ffffff;
+}
+
+/* POkemon Color */
+:root{
+    --bug:  	#a2ad48;
+    --dark:     #5c4939;
+    --dragon:   #5c3f75;
+    --fighting: #8a4e37;
+    --fairy:    #d49fa8;
+    --electric: #e6b44e;
+    --fire:     #d96241;
+    --flying:   #8e99ab;
+    --ghost:    #5a608c;
+    --grass:    #81b45f;
+    --ground:   #c0a45b;
+    --ice:      #6bb5b0;
+    --normal:   #978f73;
+    --poison:   #96597d;
+    --psychic:  #d27180;
+    --rock:     #a38e50;
+    --steel:    #96938e;
+    --water:    #6a9bb7;
+}

@@ -1,0 +1,45 @@
+:host{
+    display: grid;
+    grid-template-areas: 
+        "head head edit"
+        "content content content"
+        "add input input"
+    ;
+}
+
+span.head{
+    grid-area: head;
+}
+
+[data-edit-all]{
+    grid-area: edit;
+}
+
+[data-add]{
+    grid-area: add;
+}
+
+[data-input]{
+    grid-area: input;
+}
+
+.checknote--note--wrapper{
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr );
+
+    grid-area: content;
+}
+
+.checknote--note--wrapper input[type="text"]:disabled {
+    cursor: default;
+    background-color: transparent;
+    color: #000;
+    border: none;
+}
+
+input[data-text]{
+    grid-column: span 5;
+}
+input[data-can-remove]{
+    grid-column: span 1;
+}

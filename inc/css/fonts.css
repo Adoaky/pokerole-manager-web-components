@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Essentiarum";
+    src: url("../fonts/Essentiarum\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Thraex";
+    src: url("../fonts/ThraexSansRegular-v1000.ttf");
+}
+
+.essentiarum{
+    font-family: "Essentiarum";
+}
+

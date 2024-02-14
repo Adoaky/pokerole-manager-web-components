@@ -1,0 +1,133 @@
+:root{
+    --header-width: 8rem;
+    --borderRadius: 4rem;
+}
+
+html{
+    font-size: 10px;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav--main{
+    --_width: 8rem;
+    --_gap: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: var(--_width);
+    gap: var(--_gap);
+
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: calc(var(--_width) / 2);
+}
+
+.nav--main::before{
+    content: '';
+    inset: 0;
+    background-color: var(--bright-red);
+    border-radius: calc(var(--_width) / 2);
+    position: absolute;
+    z-index: 100;
+}
+
+/* .nav--main[data-nav-state="open"]{
+    width: 100%;
+} */
+
+.nav--link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--_gap);
+
+    position: relative;
+
+    inset: 0 0 0 1rem; 
+    color: var(--white);
+}
+
+.nav--toggle,
+.nav--link::before{
+    content: '';
+
+    display: block;
+    width: calc(var(--_width) - 2rem);
+    aspect-ratio: 1;
+
+    background-color: var(--light-grey);
+    border-radius: 5rem;
+
+    position: relative;
+    z-index: 100;
+}
+
+.nav--toggle{
+    border: none;
+    inset: 0 0 0 1rem;
+}
+
+.nav--text {
+    display: block;
+    inset: auto calc(var(--_width) + var(--_gap)) auto;
+}
+
+
+/* ============ Fonts ============= */
+body {
+    font-size: 1.6rem;
+}
+
+/* ============================ */
+
+*::-webkit-scrollbar {
+    width: .5rem;
+}
+
+* ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--dark-grey);    
+    border-radius: 1rem;
+}
+
+/* ============================ */
+
+
+main{
+    position: relative;
+    padding: 1rem;
+    overflow-y: scroll;
+
+    overflow: clip;
+    background-color: var(--light-grey);
+    border-radius: var(--borderRadius);
+    padding: calc(var(--borderRadius) + 2rem) 2rem;
+}
+
+main::before,
+main::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+
+    height: var(--borderRadius);
+    background-color: red;
+}
+
+main::before{
+    inset: 0 0 auto 0;
+}
+
+main::after{
+    inset: auto 0 0 0;
+}

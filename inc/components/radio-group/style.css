@@ -1,0 +1,24 @@
+.radio-group--wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.radio-group--wrapper input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.radio-group--wrapper input[type="checkbox"]::before{
+    content: '';
+    display: block;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    background-color: var(--white, #ffffff);
+}
+
+.radio-group--wrapper input[type="checkbox"]:checked::before{
+    background-color: black;
+    box-shadow: inset 0px 0px 0px 0.3rem #ffffff;   
+}
